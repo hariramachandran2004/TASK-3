@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #f9a825;
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #616161;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #757575;
+  }
+  
+  .cell.X {
+    color: #ff7043; /* Color for player X */
+  }
+  
+  .cell.O {
+    color: #29b6f6; /* Color for player O */
+  }
+  
+  #status {
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f9a825;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffb74d;
+  }
+  
